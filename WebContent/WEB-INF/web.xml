@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>proba1</display-name>
+  <welcome-file-list>
+  
+  	<!-- ESTA MOVIDA TE SIRVE PARA SI EN EL NAVEGADOR PONES ESTO:http://localhost:8080/proba1/
+  	TE PONE DIRECTAMENTE LA PAGINA QUE ESTA EN EL WELCOME-FILE -->
+  	
+    <welcome-file>/jsp/login_form.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>KaixoMundua</servlet-name>
+  	<servlet-class>nirepaketea.KaixoMundua</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>KaixoMundua</servlet-name>
+  	<url-pattern>/servlet/laquetecuento</url-pattern>	<!-- puedes poner la uri que tu quieras en tu servidor -->
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>KaixoMunduaHTML</servlet-name>
+  	<servlet-class>nirepaketea.KaixoMunduaHTML</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>KaixoMunduaHTML</servlet-name>
+  	<url-pattern>/servlet/kaixomunduaHTML</url-pattern>	<!-- puedes poner la uri que tu quieras en tu servidor -->
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>nirepaketea.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/servlet/Login</url-pattern>	<!-- puedes poner la uri que tu quieras en tu servidor -->
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MainServlet</servlet-name>
+  	<servlet-class>nirepaketea.MainServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MainServlet</servlet-name>
+  	<url-pattern>/servlet/Main</url-pattern>	<!-- puedes poner la uri que tu quieras en tu servidor -->
+  </servlet-mapping>
+  
+</web-app>
